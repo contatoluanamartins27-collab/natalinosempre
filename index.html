@@ -1,0 +1,2545 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Natalino v2  Feltro Online</title>
+	<style>
+		#wpadminbar #wp-admin-bar-wccp_free_top_button .ab-icon:before {
+			content: "\f160";
+			color: #02CA02;
+			top: 3px;
+		}
+
+		#wpadminbar #wp-admin-bar-wccp_free_top_button .ab-icon {
+			transform: rotate(45deg);
+		}
+	</style>
+
+	<!-- Animação Pulsante para Botões -->
+	<style>
+		/* Animação pulsante para botões de compra */
+		@keyframes pulse {
+			0% {
+				transform: scale(1);
+				box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7);
+			}
+
+			50% {
+				transform: scale(1.05);
+				box-shadow: 0 0 0 15px rgba(255, 107, 107, 0);
+			}
+
+			100% {
+				transform: scale(1);
+				box-shadow: 0 0 0 0 rgba(255, 107, 107, 0);
+			}
+		}
+
+		.elementor-widget-button .elementor-button {
+			animation: pulse 2s infinite;
+			transition: all 0.3s ease;
+		}
+
+		.elementor-widget-button .elementor-button:hover {
+			animation: none;
+			transform: scale(1.08);
+			box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+		}
+
+		/* Área clicável dos cards de planos */
+		.plano-clicavel {
+			cursor: pointer;
+			transition: all 0.3s ease;
+			position: relative;
+		}
+
+		.plano-clicavel:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25) !important;
+		}
+
+		.plano-clicavel::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			border-radius: inherit;
+			pointer-events: none;
+			transition: all 0.3s ease;
+		}
+
+		.plano-clicavel:hover::after {
+			box-shadow: inset 0 0 0 3px rgba(40, 167, 69, 0.5);
+		}
+	</style>
+
+	<meta name="robots" content="max-image-preview:large">
+	<style>
+		img:is([sizes="auto" i], [sizes^="auto," i]) {
+			contain-intrinsic-size: 3000px 1500px
+		}
+	</style>
+	<script type="application/javascript"
+		id="pys-version-script">console.log('PixelYourSite Free version 11.0.2');</script>
+	<link rel="dns-prefetch" href="//www.googletagmanager.com">
+	<link rel="alternate" type="application/rss+xml" title="Feltro Online � Feed" href="https://feltroonline.com/feed/">
+	<link rel="alternate" type="application/rss+xml" title="Feltro Online � Feed de comentários"
+		href="https://feltroonline.com/comments/feed/">
+	<script id="wpp-js" src="js/wpp.min.js" data-sampling="0" data-sampling-rate="100"
+		data-api-url="https://feltroonline.com/wp-json/wordpress-popular-posts" data-post-id="8484"
+		data-token="71fe9a5fb0" data-lang="0" data-debug="0"></script>
+	<style id="popularfx-global-styles" type="text/css">
+		.entry-content {
+			max-width: 1170px;
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		.site-header {
+			background-color: #ffffff !important;
+		}
+
+		.site-title a {
+			color: #171717 !important;
+		}
+
+		.site-title a {
+			font-size: 30 px;
+		}
+
+		.site-description {
+			color: #171717 !important;
+		}
+
+		.site-description {
+			font-size: 15px;
+		}
+
+		.site-footer {
+			background-color: #171717 ! important;
+		}
+	</style>
+	<script>
+		window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/feltroonline.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3" } };
+		/*! This file is auto-generated */
+		!function (s, n) { var o, i, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), a = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === a[t] }) } function u(e, t) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); for (var n = e.getImageData(16, 16, 1, 1), a = 0; a < n.data.length; a++)if (0 !== n.data[a]) return !1; return !0 } function f(e, t, n, a) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !a(e, "\ud83e\udedf") }return !1 } function g(e, t, n, a) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : s.createElement("canvas"), o = r.getContext("2d", { willReadFrequently: !0 }), i = (o.textBaseline = "top", o.font = "600 32px Arial", {}); return e.forEach(function (e) { i[e] = t(o, e, n, a) }), i } function t(e) { var t = s.createElement("script"); t.src = e, t.defer = !0, s.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", i = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { s.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + g.toString() + "(" + [JSON.stringify(i), f.toString(), p.toString(), u.toString()].join(",") + "));", a = new Blob([e], { type: "text/javascript" }), r = new Worker(URL.createObjectURL(a), { name: "wpTestEmojiSupports" }); return void (r.onmessage = function (e) { c(n = e.data), r.terminate(), t(n) }) } catch (e) { } c(n = g(i, f, p, u)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
+	</script>
+	<link rel="stylesheet" id="ht_ctc_main_css-css" href="css/main.css" media="all">
+	<style id="wp-emoji-styles-inline-css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 0.07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<style id="classic-theme-styles-inline-css">
+		/*! This file is auto-generated */
+		.wp-block-button__link {
+			color: #fff;
+			background-color: #32373c;
+			border-radius: 9999px;
+			box-shadow: none;
+			text-decoration: none;
+			padding: calc(.667em + 2px) calc(1.333em + 2px);
+			font-size: 1.125em
+		}
+
+		.wp-block-file__button {
+			background: #32373c;
+			color: #fff;
+			text-decoration: none
+		}
+	</style>
+	<style id="global-styles-inline-css">
+		:root {
+			--wp--preset--aspect-ratio--square: 1;
+			--wp--preset--aspect-ratio--4-3: 4/3;
+			--wp--preset--aspect-ratio--3-4: 3/4;
+			--wp--preset--aspect-ratio--3-2: 3/2;
+			--wp--preset--aspect-ratio--2-3: 2/3;
+			--wp--preset--aspect-ratio--16-9: 16/9;
+			--wp--preset--aspect-ratio--9-16: 9/16;
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #ffffff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--font-size--small: 13px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 36px;
+			--wp--preset--font-size--x-large: 42px;
+			--wp--preset--spacing--20: 0.44rem;
+			--wp--preset--spacing--30: 0.67rem;
+			--wp--preset--spacing--40: 1rem;
+			--wp--preset--spacing--50: 1.5rem;
+			--wp--preset--spacing--60: 2.25rem;
+			--wp--preset--spacing--70: 3.38rem;
+			--wp--preset--spacing--80: 5.06rem;
+			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+			--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+			--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+		}
+
+		:root :where(.is-layout-flow)> :first-child {
+			margin-block-start: 0;
+		}
+
+		:root :where(.is-layout-flow)> :last-child {
+			margin-block-end: 0;
+		}
+
+		:root :where(.is-layout-flow)>* {
+			margin-block-start: 24px;
+			margin-block-end: 0;
+		}
+
+		:root :where(.is-layout-constrained)> :first-child {
+			margin-block-start: 0;
+		}
+
+		:root :where(.is-layout-constrained)> :last-child {
+			margin-block-end: 0;
+		}
+
+		:root :where(.is-layout-constrained)>* {
+			margin-block-start: 24px;
+			margin-block-end: 0;
+		}
+
+		:root :where(.is-layout-flex) {
+			gap: 24px;
+		}
+
+		:root :where(.is-layout-grid) {
+			gap: 24px;
+		}
+
+		body .is-layout-flex {
+			display: flex;
+		}
+
+		.is-layout-flex {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		.is-layout-flex> :is(*, div) {
+			margin: 0;
+		}
+
+		body .is-layout-grid {
+			display: grid;
+		}
+
+		.is-layout-grid> :is(*, div) {
+			margin: 0;
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}
+
+		:root :where(.wp-block-pullquote) {
+			font-size: 1.5em;
+			line-height: 1.6;
+		}
+	</style>
+	<link rel="stylesheet" id="dashicons-css" href="css/dashicons.min.css" media="all">
+	<link rel="stylesheet" id="admin-bar-css" href="css/admin-bar.min.css" media="all">
+	<style id="admin-bar-inline-css">
+		/* Hide CanvasJS credits for P404 charts specifically */
+		#p404RedirectChart .canvasjs-chart-credit {
+			display: none !important;
+		}
+
+		#p404RedirectChart canvas {
+			border-radius: 6px;
+		}
+
+		.p404-redirect-adminbar-weekly-title {
+			font-weight: bold;
+			font-size: 14px;
+			color: #fff;
+			margin-bottom: 6px;
+		}
+
+		#wpadminbar #wp-admin-bar-p404_free_top_button .ab-icon:before {
+			content: "\f103";
+			color: #dc3545;
+			top: 3px;
+		}
+
+		#wp-admin-bar-p404_free_top_button .ab-item {
+			min-width: 80px !important;
+			padding: 0px !important;
+		}
+
+		/* Ensure proper positioning and z-index for P404 dropdown */
+		.p404-redirect-adminbar-dropdown-wrap {
+			min-width: 0;
+			padding: 0;
+			position: static !important;
+		}
+
+		#wpadminbar #wp-admin-bar-p404_free_top_button_dropdown {
+			position: static !important;
+		}
+
+		#wpadminbar #wp-admin-bar-p404_free_top_button_dropdown .ab-item {
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+
+		.p404-redirect-dropdown-container {
+			min-width: 340px;
+			padding: 18px 18px 12px 18px;
+			background: #23282d !important;
+			color: #fff;
+			border-radius: 12px;
+			box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+			margin-top: 10px;
+			position: relative !important;
+			z-index: 999999 !important;
+			display: block !important;
+			border: 1px solid #444;
+		}
+
+		/* Ensure P404 dropdown appears on hover */
+		#wpadminbar #wp-admin-bar-p404_free_top_button .p404-redirect-dropdown-container {
+			display: none !important;
+		}
+
+		#wpadminbar #wp-admin-bar-p404_free_top_button:hover .p404-redirect-dropdown-container {
+			display: block !important;
+		}
+
+		#wpadminbar #wp-admin-bar-p404_free_top_button:hover #wp-admin-bar-p404_free_top_button_dropdown .p404-redirect-dropdown-container {
+			display: block !important;
+		}
+
+		.p404-redirect-card {
+			background: #2c3338;
+			border-radius: 8px;
+			padding: 18px 18px 12px 18px;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			border: 1px solid #444;
+		}
+
+		.p404-redirect-btn {
+			display: inline-block;
+			background: #dc3545;
+			color: #fff !important;
+			font-weight: bold;
+			padding: 5px 22px;
+			border-radius: 8px;
+			text-decoration: none;
+			font-size: 17px;
+			transition: background 0.2s, box-shadow 0.2s;
+			margin-top: 8px;
+			box-shadow: 0 2px 8px rgba(220, 53, 69, 0.15);
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		.p404-redirect-btn:hover {
+			background: #c82333;
+			color: #fff !important;
+			box-shadow: 0 4px 16px rgba(220, 53, 69, 0.25);
+		}
+
+		/* Prevent conflicts with other admin bar dropdowns */
+		#wpadminbar .ab-top-menu>li:hover>.ab-item,
+		#wpadminbar .ab-top-menu>li.hover>.ab-item {
+			z-index: auto;
+		}
+
+		#wpadminbar #wp-admin-bar-p404_free_top_button:hover>.ab-item {
+			z-index: 999998 !important;
+		}
+	</style>
+	<link rel="stylesheet" id="wordpress-popular-posts-css-css" href="css/wpp.css" media="all">
+	<link rel="stylesheet" id="popularfx-style-css" href="css/style.css" media="all">
+	<link rel="stylesheet" id="popularfx-sidebar-css" href="css/sidebar.css" media="all">
+	<link rel="stylesheet" id="elementor-icons-css" href="css/elementor-icons.min.css" media="all">
+	<link rel="stylesheet" id="elementor-frontend-css" href="css/custom-frontend.min.css" media="all">
+	<link rel="stylesheet" id="elementor-post-39-css" href="css/post-39.css" media="all">
+	<link rel="stylesheet" id="elementor-pro-css" href="css/custom-pro-frontend.min.css" media="all">
+	<link rel="stylesheet" id="widget-heading-css" href="css/widget-heading.min.css" media="all">
+	<link rel="stylesheet" id="widget-image-css" href="css/widget-image.min.css" media="all">
+	<link rel="stylesheet" id="widget-icon-list-css" href="css/custom-widget-icon-list.min.css" media="all">
+	<link rel="stylesheet" id="widget-spacer-css" href="css/widget-spacer.min.css" media="all">
+	<link rel="stylesheet" id="widget-video-css" href="css/widget-video.min.css" media="all">
+	<link rel="stylesheet" id="widget-menu-anchor-css" href="css/widget-menu-anchor.min.css" media="all">
+	<link rel="stylesheet" id="widget-divider-css" href="css/widget-divider.min.css" media="all">
+	<link rel="stylesheet" id="widget-toggle-css" href="css/custom-widget-toggle.min.css" media="all">
+	<link rel="stylesheet" id="elementor-post-8484-css" href="css/post-8484.css" media="all">
+	<link rel="stylesheet" id="elementor-gf-local-poppins-css" href="css/poppins.css" media="all">
+	<link rel="stylesheet" id="elementor-gf-local-montserrat-css" href="css/montserrat.css" media="all">
+	<link rel="stylesheet" id="elementor-gf-local-concertone-css" href="css/concertone.css" media="all">
+	<link rel="stylesheet" id="elementor-gf-local-luckiestguy-css" href="css/luckiestguy.css" media="all">
+	<link rel="stylesheet" id="elementor-gf-local-inter-css" href="css/inter.css" media="all">
+	<link rel="stylesheet" id="elementor-gf-local-roboto-css" href="css/roboto.css" media="all">
+	<link rel="stylesheet" id="elementor-icons-shared-0-css" href="css/fontawesome.min.css" media="all">
+	<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="css/solid.min.css" media="all">
+	<script src="js/jquery.min.js" id="jquery-core-js"></script>
+	<script src="js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+	<script src="js/jquery.bind-first-0.2.3.min.js" id="jquery-bind-first-js"></script>
+	<script src="js/js.cookie-2.1.3.min.js" id="js-cookie-pys-js"></script>
+	<script src="js/tld.min.js" id="js-tld-js"></script>
+	<script id="pys-js-extra">
+		var pysOptions = { "staticEvents": { "facebook": { "init_event": [{ "delay": 0, "type": "static", "ajaxFire": false, "name": "PageView", "pixelIds": ["9609442015764172"], "eventID": "62ab4917-b438-4f30-9e9c-c8a92b4fd430", "params": { "page_title": "Natalino v2", "post_type": "page", "post_id": 8484, "plugin": "PixelYourSite", "user_role": "guest", "event_url": "feltroonline.com\/natalino-v2-2\/" }, "e_id": "init_event", "ids": [], "hasTimeWindow": false, "timeWindow": 0, "woo_order": "", "edd_order": "" }] } }, "dynamicEvents": [], "triggerEvents": [], "triggerEventTypes": [], "facebook": { "pixelIds": ["9609442015764172"], "advancedMatching": { "external_id": "dddbbaebeadadcefcaeebeaedcaa" }, "advancedMatchingEnabled": true, "removeMetadata": false, "wooVariableAsSimple": false, "serverApiEnabled": true, "wooCRSendFromServer": false, "send_external_id": null, "enabled_medical": false, "do_not_track_medical_param": ["event_url", "post_title", "page_title", "landing_page", "content_name", "categories", "category_name", "tags"], "meta_ldu": false }, "debug": "", "siteUrl": "https:\/\/feltroonline.com", "ajaxUrl": "https:\/\/feltroonline.com\/wp-admin\/admin-ajax.php", "ajax_event": "044ad708e0", "enable_remove_download_url_param": "1", "cookie_duration": "7", "last_visit_duration": "60", "enable_success_send_form": "", "ajaxForServerEvent": "1", "ajaxForServerStaticEvent": "1", "send_external_id": "1", "external_id_expire": "180", "track_cookie_for_subdomains": "1", "google_consent_mode": "1", "gdpr": { "ajax_enabled": false, "all_disabled_by_api": false, "facebook_disabled_by_api": false, "analytics_disabled_by_api": false, "google_ads_disabled_by_api": false, "pinterest_disabled_by_api": false, "bing_disabled_by_api": false, "externalID_disabled_by_api": false, "facebook_prior_consent_enabled": true, "analytics_prior_consent_enabled": true, "google_ads_prior_consent_enabled": null, "pinterest_prior_consent_enabled": true, "bing_prior_consent_enabled": true, "cookiebot_integration_enabled": false, "cookiebot_facebook_consent_category": "marketing", "cookiebot_analytics_consent_category": "statistics", "cookiebot_tiktok_consent_category": "marketing", "cookiebot_google_ads_consent_category": "marketing", "cookiebot_pinterest_consent_category": "marketing", "cookiebot_bing_consent_category": "marketing", "consent_magic_integration_enabled": false, "real_cookie_banner_integration_enabled": false, "cookie_notice_integration_enabled": false, "cookie_law_info_integration_enabled": false, "analytics_storage": { "enabled": true, "value": "granted", "filter": false }, "ad_storage": { "enabled": true, "value": "granted", "filter": false }, "ad_user_data": { "enabled": true, "value": "granted", "filter": false }, "ad_personalization": { "enabled": true, "value": "granted", "filter": false } }, "cookie": { "disabled_all_cookie": false, "disabled_start_session_cookie": false, "disabled_advanced_form_data_cookie": false, "disabled_landing_page_cookie": false, "disabled_first_visit_cookie": false, "disabled_trafficsource_cookie": false, "disabled_utmTerms_cookie": false, "disabled_utmId_cookie": false }, "tracking_analytics": { "TrafficSource": "direct", "TrafficLanding": "undefined", "TrafficUtms": { "utm_source": "FB", "utm_medium": "criativo 3%7C120232204723810104", "utm_campaign": "Feltro Natal 14%2F08 %E2%80%94 C%C3%B3pia %E2%80%94 C%C3%B3pia%7C120232204723760104", "utm_term": "Instagram_Reels", "utm_content": "c1%7C120232204723800104" }, "TrafficUtmsId": [] }, "GATags": { "ga_datalayer_type": "default", "ga_datalayer_name": "dataLayerPYS" }, "woo": { "enabled": false }, "edd": { "enabled": false }, "cache_bypass": "1760381701" };
+	</script>
+	<script src="js/public.js" id="pys-js"></script>
+
+	<!-- Google tag (gtag.js) snippet added by Site Kit -->
+	<!-- Google Analytics snippet added by Site Kit -->
+	<script src="https://www.googletagmanager.com/gtag/js?id=GT-NBXSFPQ" id="google_gtagjs-js" async=""></script>
+	<script id="google_gtagjs-js-after">
+		window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
+		gtag("set", "linker", { "domains": ["feltroonline.com"] });
+		gtag("js", new Date());
+		gtag("set", "developer_id.dZTNiMT", true);
+		gtag("config", "GT-NBXSFPQ");
+	</script>
+	<link rel="https://api.w.org/" href="https://feltroonline.com/wp-json/">
+	<link rel="alternate" title="JSON" type="application/json" href="https://feltroonline.com/wp-json/wp/v2/pages/8484">
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://feltroonline.com/xmlrpc.php?rsd">
+	<meta name="generator" content="WordPress 6.8.3">
+	<link rel="canonical" href="https://feltroonline.com/natalino-v2-2/">
+	<link rel="shortlink" href="https://feltroonline.com/?p=8484">
+	<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
+		href="https://feltroonline.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffeltroonline.com%2Fnatalino-v2-2%2F">
+	<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
+		href="https://feltroonline.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffeltroonline.com%2Fnatalino-v2-2%2F&format=xml">
+	<meta name="generator" content="Site Kit by Google 1.159.0">
+	<script type="text/javascript">
+		(function (c, l, a, r, i, t, y) {
+			c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) }; t = l.createElement(r); t.async = 1;
+			t.src = "https://www.clarity.ms/tag/" + i + "?ref=wordpress"; y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+		})(window, document, "clarity", "script", "rqprspp25a");
+	</script>
+	<script id="wpcp_disable_selection" type="text/javascript">
+		var image_save_msg = 'You are not allowed to save images!';
+		var no_menu_msg = 'Context Menu disabled!';
+		var smessage = "Content is protected !!";
+
+		function disableEnterKey(e) {
+			var elemtype = e.target.tagName;
+
+			elemtype = elemtype.toUpperCase();
+
+			if (elemtype == "TEXT" || elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "PASSWORD" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED") {
+				elemtype = 'TEXT';
+			}
+
+			if (e.ctrlKey) {
+				var key;
+				if (window.event)
+					key = window.event.keyCode;     //IE
+				else
+					key = e.which;     //firefox (97)
+				//if (key != 17) alert(key);
+				if (elemtype != 'TEXT' && (key == 97 || key == 65 || key == 67 || key == 99 || key == 88 || key == 120 || key == 26 || key == 85 || key == 86 || key == 83 || key == 43 || key == 73)) {
+					if (wccp_free_iscontenteditable(e)) return true;
+					show_wpcp_message('You are not allowed to copy content or view source');
+					return false;
+				} else
+					return true;
+			}
+		}
+
+
+		/*For contenteditable tags*/
+		function wccp_free_iscontenteditable(e) {
+			var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
+
+			var target = e.target || e.srcElement;
+
+			var elemtype = e.target.nodeName;
+
+			elemtype = elemtype.toUpperCase();
+
+			var iscontenteditable = "false";
+
+			if (typeof target.getAttribute != "undefined") iscontenteditable = target.getAttribute("contenteditable"); // Return true or false as string
+
+			var iscontenteditable2 = false;
+
+			if (typeof target.isContentEditable != "undefined") iscontenteditable2 = target.isContentEditable; // Return true or false as boolean
+
+			if (target.parentElement.isContentEditable) iscontenteditable2 = true;
+
+			if (iscontenteditable == "true" || iscontenteditable2 == true) {
+				if (typeof target.style != "undefined") target.style.cursor = "text";
+
+				return true;
+			}
+		}
+
+		////////////////////////////////////
+		function disable_copy(e) {
+			var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
+
+			var elemtype = e.target.tagName;
+
+			elemtype = elemtype.toUpperCase();
+
+			if (elemtype == "TEXT" || elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "PASSWORD" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED") {
+				elemtype = 'TEXT';
+			}
+
+			if (wccp_free_iscontenteditable(e)) return true;
+
+			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+
+			var checker_IMG = '';
+			if (elemtype == "IMG" && checker_IMG == 'checked' && e.detail >= 2) { show_wpcp_message(alertMsg_IMG); return false; }
+			if (elemtype != "TEXT") {
+				if (smessage !== "" && e.detail == 2)
+					show_wpcp_message(smessage);
+
+				if (isSafari)
+					return true;
+				else
+					return false;
+			}
+		}
+
+		//////////////////////////////////////////
+		function disable_copy_ie() {
+			var e = e || window.event;
+			var elemtype = window.event.srcElement.nodeName;
+			elemtype = elemtype.toUpperCase();
+			if (wccp_free_iscontenteditable(e)) return true;
+			if (elemtype == "IMG") { show_wpcp_message(alertMsg_IMG); return false; }
+			if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED") {
+				return false;
+			}
+		}
+		function reEnable() {
+			return true;
+		}
+		document.onkeydown = disableEnterKey;
+		document.onselectstart = disable_copy_ie;
+		if (navigator.userAgent.indexOf('MSIE') == -1) {
+			document.onmousedown = disable_copy;
+			document.onclick = reEnable;
+		}
+		function disableSelection(target) {
+			//For IE This code will work
+			if (typeof target.onselectstart != "undefined")
+				target.onselectstart = disable_copy_ie;
+
+			//For Firefox This code will work
+			else if (typeof target.style.MozUserSelect != "undefined") { target.style.MozUserSelect = "none"; }
+
+			//All other  (ie: Opera) This code will work
+			else
+				target.onmousedown = function () { return false }
+			target.style.cursor = "default";
+		}
+		//Calling the JS function directly just after body load
+		window.onload = function () { disableSelection(document.body); };
+
+		//////////////////special for safari Start////////////////
+		var onlongtouch;
+		var timer;
+		var touchduration = 1000; //length of time we want the user to touch before we do something
+
+		var elemtype = "";
+		function touchstart(e) {
+			var e = e || window.event;
+			// also there is no e.target property in IE.
+			// instead IE uses window.event.srcElement
+			var target = e.target || e.srcElement;
+
+			elemtype = window.event.srcElement.nodeName;
+
+			elemtype = elemtype.toUpperCase();
+
+			if (!wccp_pro_is_passive()) e.preventDefault();
+			if (!timer) {
+				timer = setTimeout(onlongtouch, touchduration);
+			}
+		}
+
+		function touchend() {
+			//stops short touches from firing the event
+			if (timer) {
+				clearTimeout(timer);
+				timer = null;
+			}
+			onlongtouch();
+		}
+
+		onlongtouch = function (e) { //this will clear the current selection if anything selected
+
+			if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "EMBED" && elemtype != "OPTION") {
+				if (window.getSelection) {
+					if (window.getSelection().empty) {  // Chrome
+						window.getSelection().empty();
+					} else if (window.getSelection().removeAllRanges) {  // Firefox
+						window.getSelection().removeAllRanges();
+					}
+				} else if (document.selection) {  // IE?
+					document.selection.empty();
+				}
+				return false;
+			}
+		};
+
+		document.addEventListener("DOMContentLoaded", function (event) {
+			window.addEventListener("touchstart", touchstart, false);
+			window.addEventListener("touchend", touchend, false);
+		});
+
+		function wccp_pro_is_passive() {
+
+			var cold = false,
+				hike = function () { };
+
+			try {
+				const object1 = {};
+				var aid = Object.defineProperty(object1, 'passive', {
+					get() { cold = true }
+				});
+				window.addEventListener('test', hike, aid);
+				window.removeEventListener('test', hike, aid);
+			} catch (e) { }
+
+			return cold;
+		}
+		/*special for safari End*/
+	</script>
+	<script id="wpcp_disable_Right_Click" type="text/javascript">
+		document.ondragstart = function () { return false; }
+		function nocontext(e) {
+			return false;
+		}
+		document.oncontextmenu = nocontext;
+	</script>
+	<style>
+		.unselectable {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			cursor: default;
+		}
+
+		html {
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		}
+	</style>
+	<script id="wpcp_css_disable_selection" type="text/javascript">
+		var e = document.getElementsByTagName('body')[0];
+		if (e) {
+			e.setAttribute('unselectable', "on");
+		}
+	</script>
+	<style id="wpp-loading-animation-styles">
+		@-webkit-keyframes bgslide {
+			from {
+				background-position-x: 0
+			}
+
+			to {
+				background-position-x: -200%
+			}
+		}
+
+		@keyframes bgslide {
+			from {
+				background-position-x: 0
+			}
+
+			to {
+				background-position-x: -200%
+			}
+		}
+
+		.wpp-widget-block-placeholder,
+		.wpp-shortcode-placeholder {
+			margin: 0 auto;
+			width: 60px;
+			height: 3px;
+			background: #dd3737;
+			background: linear-gradient(90deg, #dd3737 0%, #571313 10%, #dd3737 100%);
+			background-size: 200% auto;
+			border-radius: 3px;
+			-webkit-animation: bgslide 1s infinite linear;
+			animation: bgslide 1s infinite linear
+		}
+	</style>
+	<!-- Analytics by WP Statistics - https://wp-statistics.com -->
+	<meta name="generator"
+		content="Elementor 3.30.3; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+	<style>
+		.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+		.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+			background-image: none !important;
+		}
+
+		@media screen and (max-height: 1024px) {
+
+			.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+			.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+				background-image: none !important;
+			}
+		}
+
+		@media screen and (max-height: 640px) {
+
+			.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+			.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+				background-image: none !important;
+			}
+		}
+	</style>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+</head>
+
+<body
+	class="wp-singular page-template page-template-elementor_canvas page page-id-8484 wp-theme-popularfx unselectable no-sidebar popularfx-body elementor-default elementor-template-canvas elementor-kit-39 elementor-page elementor-page-8484">
+	<div data-elementor-type="wp-page" data-elementor-id="8484" class="elementor elementor-8484">
+		<div class="elementor-element elementor-element-61924026 e-flex e-con-boxed e-con e-parent" data-id="61924026"
+			data-element_type="container" data-settings="{" background_background":"classic"}"="">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-2c5991aa elementor-widget elementor-widget-heading"
+					data-id="2c5991aa" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+						<h2 class="elementor-heading-title elementor-size-default">150 MOLDES NATALINOS PARA FELTRO E
+							E.V.A</h2>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-212238b elementor-widget elementor-widget-heading"
+					data-id="212238b" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+						<h3 class="elementor-heading-title elementor-size-default">Tenha <b>150 moldes natalinos
+								exclusivos</b>, prontos para imprimir e lucrar neste Natal — por apenas <b>R$10</b>!
+						</h3>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-13be1180 elementor-widget elementor-widget-image"
+					data-id="13be1180" data-element_type="widget" data-widget_type="image.default">
+					<div class="elementor-widget-container">
+						<img fetchpriority="high" decoding="async" width="2000" height="1680"
+							src="images/100-MOLDES-NATALINOS-5-e1755753974962.webp"
+							class="attachment-2048x2048 size-2048x2048 wp-image-8651" alt=""
+							srcset="images/100-MOLDES-NATALINOS-5-e1755753974962.webp 2000w, images/100-MOLDES-NATALINOS-5-e1755753974962-300x252.webp 300w, images/100-MOLDES-NATALINOS-5-e1755753974962-1024x860.webp 1024w, images/100-MOLDES-NATALINOS-5-e1755753974962-768x645.webp 768w, images/100-MOLDES-NATALINOS-5-e1755753974962-1536x1290.webp 1536w"
+							sizes="(max-width: 2000px) 100vw, 2000px">
+					</div>
+				</div>
+			</div>
+		</div>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-e03c258 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="e03c258" data-element_type="section" data-settings="{" background_background":"classic"}"="">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3fa98ee"
+					data-id="3fa98ee" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-14f6dd9 elementor-widget elementor-widget-heading"
+							data-id="14f6dd9" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">DE <s>R$97,00</s></h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-afd0950 elementor-widget elementor-widget-heading"
+							data-id="afd0950" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">POR APENAS</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-eff3c4a elementor-widget elementor-widget-heading"
+							data-id="eff3c4a" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">R$10</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-bf2869f elementor-widget elementor-widget-heading"
+							data-id="bf2869f" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">MAS VOCÊ PRECISA AGIR
+									RÁPIDO...</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-0e7544b elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button"
+							data-id="0e7544b" data-element_type="widget" data-widget_type="button.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-button-wrapper">
+									<a class="elementor-button elementor-button-link elementor-size-lg" href="#comprar">
+										<span class="elementor-button-content-wrapper">
+											<span class="elementor-button-text">SIM! QUERO ACESSAR AGORA</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-2e3b7f3 elementor-widget elementor-widget-image"
+							data-id="2e3b7f3" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img decoding="async" width="752" height="156"
+									src="images/IMG_3713.jpg-e1756127832457.webp"
+									class="attachment-large size-large wp-image-7229" alt=""
+									srcset="images/IMG_3713.jpg-e1756127832457.webp 752w, images/IMG_3713.jpg-e1756127832457-300x62.webp 300w"
+									sizes="(max-width: 752px) 100vw, 752px">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="elementor-element elementor-element-e9b95f7 e-flex e-con-boxed e-con e-parent" data-id="e9b95f7"
+			data-element_type="container" data-settings="{" background_background":"classic"}"="">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-a93e4c6 elementor-widget elementor-widget-heading"
+					data-id="a93e4c6" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+						<h3 class="elementor-heading-title elementor-size-default">PARA QUEM SÃO OS 150 MOLDES
+							<br>NATALINOS EM FELTRO
+						</h3>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-5f32f43 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+					data-id="5f32f43" data-element_type="widget" data-widget_type="icon-list.default">
+					<div class="elementor-widget-container">
+						<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+									<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+								<span class="elementor-icon-list-text">Quem quer aprender feltro, mas não sabe por onde
+									começar</span>
+							</li>
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+									<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+								<span class="elementor-icon-list-text">Mulheres que desejam conquistar sua independência
+									financeira</span>
+							</li>
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+									<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+								<span class="elementor-icon-list-text">Quem se sente travada ao criar moldes do
+									zero</span>
+							</li>
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+									<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+								<span class="elementor-icon-list-text">Quem quer começar com baixo investimento</span>
+							</li>
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+									<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+								<span class="elementor-icon-list-text">Quem ama trabalhos manuais e quer transformar
+									hobby em dinheiro</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-70723b3 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="70723b3" data-element_type="section" data-settings="{" background_background":"classic"}"="">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0884e98"
+					data-id="0884e98" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-37ebb69 elementor-widget elementor-widget-heading"
+							data-id="37ebb69" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">Alguns dos 150 Moldes
+									Natalinos <br> que você terá acesso</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-099d186 elementor-widget elementor-widget-heading"
+							data-id="099d186" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Esses são só alguns exemplos…
+									você ainda recebe muitos outros moldes natalinos.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="elementor-element elementor-element-2c888cba e-grid e-con-boxed e-con e-parent" data-id="2c888cba"
+			data-element_type="container" data-settings="{" background_background":"classic"}"="">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-1b24496b elementor-widget elementor-widget-image"
+					data-id="1b24496b" data-element_type="widget" data-widget_type="image.default">
+					<div class="elementor-widget-container">
+						<img decoding="async" width="300" height="300" src="images/Copia-de-Exemplo-300x300-96.webp"
+							class="attachment-large size-large wp-image-7216" alt=""
+							srcset="images/Copia-de-Exemplo-300x300-96.webp 300w, images/Copia-de-Exemplo-300x300-96-150x150.webp 150w"
+							sizes="(max-width: 300px) 100vw, 300px">
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-727b2701 elementor-widget elementor-widget-image"
+					data-id="727b2701" data-element_type="widget" data-widget_type="image.default">
+					<div class="elementor-widget-container">
+						<img loading="lazy" decoding="async" width="300" height="300"
+							src="images/Copia-de-Exemplo-300x300-93.webp"
+							class="attachment-large size-large wp-image-7217" alt=""
+							srcset="images/Copia-de-Exemplo-300x300-93.webp 300w, images/Copia-de-Exemplo-300x300-93-150x150.webp 150w"
+							sizes="(max-width: 300px) 100vw, 300px">
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-4a857d09 elementor-widget elementor-widget-image"
+					data-id="4a857d09" data-element_type="widget" data-widget_type="image.default">
+					<div class="elementor-widget-container">
+						<img loading="lazy" decoding="async" width="300" height="300"
+							src="images/Copia-de-Exemplo-300x300-97.webp"
+							class="attachment-large size-large wp-image-7218" alt=""
+							srcset="images/Copia-de-Exemplo-300x300-97.webp 300w, images/Copia-de-Exemplo-300x300-97-150x150.webp 150w"
+							sizes="(max-width: 300px) 100vw, 300px">
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-1cd2f4ab elementor-widget elementor-widget-image"
+					data-id="1cd2f4ab" data-element_type="widget" data-widget_type="image.default">
+					<div class="elementor-widget-container">
+						<img loading="lazy" decoding="async" width="300" height="300"
+							src="images/Copia-de-Exemplo-300x300-98.webp"
+							class="attachment-large size-large wp-image-7219" alt=""
+							srcset="images/Copia-de-Exemplo-300x300-98.webp 300w, images/Copia-de-Exemplo-300x300-98-150x150.webp 150w"
+							sizes="(max-width: 300px) 100vw, 300px">
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-25e9cb71 elementor-widget elementor-widget-image"
+					data-id="25e9cb71" data-element_type="widget" data-widget_type="image.default">
+					<div class="elementor-widget-container">
+						<img loading="lazy" decoding="async" width="300" height="300"
+							src="images/Copia-de-Exemplo-300x300-2024-08-08T071949.840.webp"
+							class="attachment-large size-large wp-image-7220" alt=""
+							srcset="images/Copia-de-Exemplo-300x300-2024-08-08T071949.840.webp 300w, images/Copia-de-Exemplo-300x300-2024-08-08T071949.840-150x150.webp 150w"
+							sizes="(max-width: 300px) 100vw, 300px">
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-1ea1f25e elementor-widget elementor-widget-image"
+					data-id="1ea1f25e" data-element_type="widget" data-widget_type="image.default">
+					<div class="elementor-widget-container">
+						<img loading="lazy" decoding="async" width="300" height="300"
+							src="images/Copia-de-Exemplo-300x300-94-1.webp"
+							class="attachment-large size-large wp-image-7221" alt=""
+							srcset="images/Copia-de-Exemplo-300x300-94-1.webp 300w, images/Copia-de-Exemplo-300x300-94-1-150x150.webp 150w"
+							sizes="(max-width: 300px) 100vw, 300px">
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-797b9e4c elementor-widget elementor-widget-image"
+					data-id="797b9e4c" data-element_type="widget" data-widget_type="image.default">
+					<div class="elementor-widget-container">
+						<img loading="lazy" decoding="async" width="300" height="300"
+							src="images/Copia-de-Exemplo-300x300-95.webp"
+							class="attachment-large size-large wp-image-7222" alt=""
+							srcset="images/Copia-de-Exemplo-300x300-95.webp 300w, images/Copia-de-Exemplo-300x300-95-150x150.webp 150w"
+							sizes="(max-width: 300px) 100vw, 300px">
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-7f3aad1 elementor-widget elementor-widget-image"
+					data-id="7f3aad1" data-element_type="widget" data-widget_type="image.default">
+					<div class="elementor-widget-container">
+						<img loading="lazy" decoding="async" width="300" height="300"
+							src="images/Copia-de-Exemplo-300x300-2024-07-26T030449.040.webp"
+							class="attachment-large size-large wp-image-7223" alt=""
+							srcset="images/Copia-de-Exemplo-300x300-2024-07-26T030449.040.webp 300w, images/Copia-de-Exemplo-300x300-2024-07-26T030449.040-150x150.webp 150w"
+							sizes="(max-width: 300px) 100vw, 300px">
+					</div>
+				</div>
+			</div>
+		</div>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-80aded8 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="80aded8" data-element_type="section" data-settings="{" background_background":"classic"}"="">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c2b2d9b"
+					data-id="c2b2d9b" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cb00d91 elementor-widget elementor-widget-heading"
+							data-id="cb00d91" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default"><b>Clique no botão </b>abaixo
+									e garanta agora todos os <b>150 moldes</b> por apenas <b>R$10</b></h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-35d8234 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button"
+							data-id="35d8234" data-element_type="widget" data-widget_type="button.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-button-wrapper">
+									<a class="elementor-button elementor-button-link elementor-size-lg" href="#comprar">
+										<span class="elementor-button-content-wrapper">
+											<span class="elementor-button-text">SIM! QUERO ACESSAR AGORA</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="elementor-element elementor-element-ca05d1c e-flex e-con-boxed e-con e-parent" data-id="ca05d1c"
+			data-element_type="container" data-settings="{" background_background":"classic"}"="">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-41e1692 elementor-widget elementor-widget-heading"
+					data-id="41e1692" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+						<h3 class="elementor-heading-title elementor-size-default">Bônus Para Quem <span
+								style="text-decoration: underline">AGIR RÁPIDO</span>...</h3>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-0ca4a70 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor"
+					data-id="0ca4a70" data-element_type="widget" data-widget_type="text-editor.default">
+					<div class="elementor-widget-container">
+						<p><span
+								style="color: #ffffff; background-color: #ff0000; padding-left: 8px; padding-right: 8px;">
+								08 Bônus Incríveis</span> para quem comprar agora!</p>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-fef0716 e-con-full e-flex e-con e-child"
+					data-id="fef0716" data-element_type="container" data-settings="{"
+					background_background":"classic"}"="">
+					<div class="elementor-element elementor-element-295f3db elementor-widget__width-initial elementor-widget elementor-widget-image"
+						data-id="295f3db" data-element_type="widget" data-widget_type="image.default">
+						<div class="elementor-widget-container">
+							<img loading="lazy" decoding="async" width="500" height="500"
+								src="images/Sem_nome__1691_x_1036_px___500_x_500_px___10_-removebg-preview.webp"
+								class="attachment-full size-full wp-image-7798" alt=""
+								srcset="images/Sem_nome__1691_x_1036_px___500_x_500_px___10_-removebg-preview.webp 500w, images/Sem_nome__1691_x_1036_px___500_x_500_px___10_-removebg-preview-300x300.webp 300w, images/Sem_nome__1691_x_1036_px___500_x_500_px___10_-removebg-preview-150x150.webp 150w"
+								sizes="(max-width: 500px) 100vw, 500px">
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-899188b e-con-full e-flex e-con e-child"
+						data-id="899188b" data-element_type="container">
+						<div class="elementor-element elementor-element-de49baf elementor-widget elementor-widget-heading"
+							data-id="de49baf" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">BÔNUS 1</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-698db87 elementor-widget elementor-widget-heading"
+							data-id="698db87" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Checklist do Plano
+									R$2.000/mês com Feltro</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-9ba40e5 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor"
+							data-id="9ba40e5" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-widget-container">
+								<p>O mapa completo para transformar seu artesanato em renda mensal.<br data-start="671"
+										data-end="674">Descubra o que produzir, quanto cobrar e como organizar sua
+									rotina para lucrar com feltro.</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-338dbd8 elementor-widget elementor-widget-heading"
+							data-id="338dbd8" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">Valor: <s>R$ 47,90</s>
+									<br>
+
+									<b>Grátis hoje!</b>
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-38ca052 e-con-full e-flex e-con e-child"
+					data-id="38ca052" data-element_type="container" data-settings="{"
+					background_background":"classic"}"="">
+					<div class="elementor-element elementor-element-0937ee0 elementor-widget__width-initial elementor-widget elementor-widget-image"
+						data-id="0937ee0" data-element_type="widget" data-widget_type="image.default">
+						<div class="elementor-widget-container">
+							<img loading="lazy" decoding="async" width="503" height="381"
+								src="images/Design-sem-nome-2025-06-27T094659.921-e1751028553281.webp"
+								class="attachment-full size-full wp-image-8125" alt=""
+								srcset="images/Design-sem-nome-2025-06-27T094659.921-e1751028553281.webp 503w, images/Design-sem-nome-2025-06-27T094659.921-e1751028553281-300x227.webp 300w"
+								sizes="(max-width: 503px) 100vw, 503px">
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-fbfa899 e-con-full e-flex e-con e-child"
+						data-id="fbfa899" data-element_type="container">
+						<div class="elementor-element elementor-element-bf3f949 elementor-widget elementor-widget-heading"
+							data-id="bf3f949" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">BÔNUS 2</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-f421ad6 elementor-widget elementor-widget-heading"
+							data-id="f421ad6" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Calculadora Automática de
+									Preço </h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-845c639 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor"
+							data-id="845c639" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-widget-container">
+								<p data-start="617" data-end="791">Nunca mais erre na hora de cobrar.<br
+										data-start="887" data-end="890">Preencha seus custos e descubra automaticamente
+									o valor ideal de cada peça com lucro garantido.</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-d71d2f4 elementor-widget elementor-widget-heading"
+							data-id="d71d2f4" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">Valor: <s>R$ 47,90</s>
+									<br>
+
+									<b>Grátis hoje!</b>
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-9f46f79 e-con-full e-flex e-con e-child"
+					data-id="9f46f79" data-element_type="container" data-settings="{"
+					background_background":"classic"}"="">
+					<div class="elementor-element elementor-element-7a2cde6 elementor-widget__width-initial elementor-widget elementor-widget-image"
+						data-id="7a2cde6" data-element_type="widget" data-widget_type="image.default">
+						<div class="elementor-widget-container">
+							<img loading="lazy" decoding="async" width="400" height="444"
+								src="images/Design-sem-nome-35.png.webp" class="attachment-full size-full wp-image-7679"
+								alt=""
+								srcset="images/Design-sem-nome-35.png.webp 400w, images/Design-sem-nome-35.png-270x300.webp 270w"
+								sizes="(max-width: 400px) 100vw, 400px">
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-72e0a52 e-con-full e-flex e-con e-child"
+						data-id="72e0a52" data-element_type="container">
+						<div class="elementor-element elementor-element-8d2cbb0 elementor-widget elementor-widget-heading"
+							data-id="8d2cbb0" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">BÔNUS 3</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-ab2534a elementor-widget elementor-widget-heading"
+							data-id="ab2534a" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">30 Moldes Safari</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-117bc86 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor"
+							data-id="117bc86" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-widget-container">
+								<p data-start="860" data-end="1036">Tema campeão de vendas em festas e decoração
+									infantil.<br data-start="1113" data-end="1116">Receba moldes lindos, prontos pra
+									imprimir e vender.</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-98eae24 elementor-widget elementor-widget-heading"
+							data-id="98eae24" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">Valor: <s>R$ 17,00</s>
+									<br>
+
+									<b>Grátis hoje!</b>
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-caa9948 e-con-full e-flex e-con e-child"
+					data-id="caa9948" data-element_type="container" data-settings="{"
+					background_background":"classic"}"="">
+					<div class="elementor-element elementor-element-04a5a0a elementor-widget__width-initial elementor-widget elementor-widget-image"
+						data-id="04a5a0a" data-element_type="widget" data-widget_type="image.default">
+						<div class="elementor-widget-container">
+							<img loading="lazy" decoding="async" width="400" height="444"
+								src="images/Design-sem-nome-40.png.webp" class="attachment-full size-full wp-image-7678"
+								alt=""
+								srcset="images/Design-sem-nome-40.png.webp 400w, images/Design-sem-nome-40.png-270x300.webp 270w"
+								sizes="(max-width: 400px) 100vw, 400px">
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-5a40e92 e-con-full e-flex e-con e-child"
+						data-id="5a40e92" data-element_type="container">
+						<div class="elementor-element elementor-element-2ed546e elementor-widget elementor-widget-heading"
+							data-id="2ed546e" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">BÔNUS 4</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-ec1dc53 elementor-widget elementor-widget-heading"
+							data-id="ec1dc53" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Ebook 11 Ideias Para Lucrar
+									com Artesanato</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-4ac0891 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor"
+							data-id="4ac0891" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-widget-container">
+								<p data-start="1196" data-end="1356">Descubra novas formas reais de ganhar dinheiro com
+									seu talento, mesmo sendo iniciante.</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-adfca21 elementor-widget elementor-widget-heading"
+							data-id="adfca21" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">Valor: <s>R$ 17,90</s>
+									<br>
+
+									<b>Grátis hoje!</b>
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-9576f6e e-con-full e-flex e-con e-child"
+					data-id="9576f6e" data-element_type="container" data-settings="{"
+					background_background":"classic"}"="">
+					<div class="elementor-element elementor-element-c41a21f elementor-widget__width-initial elementor-widget elementor-widget-image"
+						data-id="c41a21f" data-element_type="widget" data-widget_type="image.default">
+						<div class="elementor-widget-container">
+							<img loading="lazy" decoding="async" width="215" height="300"
+								src="images/c5-e1702743343173-215x300.png.webp"
+								class="attachment-full size-full wp-image-7680" alt="">
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-440c9a2 e-con-full e-flex e-con e-child"
+						data-id="440c9a2" data-element_type="container">
+						<div class="elementor-element elementor-element-986f563 elementor-widget elementor-widget-heading"
+							data-id="986f563" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">BÔNUS 5</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-220883f elementor-widget elementor-widget-heading"
+							data-id="220883f" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Guia de Materiais de Feltro
+								</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-1652695 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor"
+							data-id="1652695" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-widget-container">
+								<p>Tudo que você precisa saber para comprar os melhores materiais gastando menos e
+									produzindo mais com qualidade.</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-42cc9ee elementor-widget elementor-widget-heading"
+							data-id="42cc9ee" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">Valor: <s>R$ 17,90</s>
+									<br>
+
+									<b>Grátis hoje!</b>
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-fb627b5 e-con-full e-flex e-con e-child"
+					data-id="fb627b5" data-element_type="container" data-settings="{"
+					background_background":"classic"}"="">
+					<div class="elementor-element elementor-element-a1c2a83 elementor-widget__width-initial elementor-widget elementor-widget-image"
+						data-id="a1c2a83" data-element_type="widget" data-widget_type="image.default">
+						<div class="elementor-widget-container">
+							<img loading="lazy" decoding="async" width="500" height="500"
+								src="images/Design_sem_nome_-_2025-08-01T084106.014-removebg-preview.webp"
+								class="attachment-full size-full wp-image-8302" alt=""
+								srcset="images/Design_sem_nome_-_2025-08-01T084106.014-removebg-preview.webp 500w, images/Design_sem_nome_-_2025-08-01T084106.014-removebg-preview-300x300.webp 300w, images/Design_sem_nome_-_2025-08-01T084106.014-removebg-preview-150x150.webp 150w"
+								sizes="(max-width: 500px) 100vw, 500px">
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-d896d90 e-con-full e-flex e-con e-child"
+						data-id="d896d90" data-element_type="container">
+						<div class="elementor-element elementor-element-17cd4ad elementor-widget elementor-widget-heading"
+							data-id="17cd4ad" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">BÔNUS 6</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-43a5e11 elementor-widget elementor-widget-heading"
+							data-id="43a5e11" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Apostila Jogo da Memória</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-b7a617c elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor"
+							data-id="b7a617c" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-widget-container">
+								<p data-start="1577" data-end="1716">Moldes prontos de um clássico que vende muito para
+									lembrancinhas e kits educativos.</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-1f2ab1d elementor-widget elementor-widget-heading"
+							data-id="1f2ab1d" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">Valor: <s>R$ 17,90</s>
+									<br>
+
+									<b>Grátis hoje!</b>
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-13bedb7 e-con-full e-flex e-con e-child"
+					data-id="13bedb7" data-element_type="container" data-settings="{"
+					background_background":"classic"}"="">
+					<div class="elementor-element elementor-element-107ad83 elementor-widget__width-initial elementor-widget elementor-widget-image"
+						data-id="107ad83" data-element_type="widget" data-widget_type="image.default">
+						<div class="elementor-widget-container">
+							<img loading="lazy" decoding="async" width="300" height="200"
+								src="images/Design-sem-nome-41-300x200.png.webp"
+								class="attachment-full size-full wp-image-7231" alt="">
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-18c4ae3 e-con-full e-flex e-con e-child"
+						data-id="18c4ae3" data-element_type="container">
+						<div class="elementor-element elementor-element-3e78ea6 elementor-widget elementor-widget-heading"
+							data-id="3e78ea6" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">BÔNUS 7</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-103dfc6 elementor-widget elementor-widget-heading"
+							data-id="103dfc6" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">Etiquetas Editáveis
+									Profissionais</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-1595447 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor"
+							data-id="1595447" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-widget-container">
+								<p data-start="1742" data-end="1918">Dê um toque profissional às suas criações com
+									etiquetas prontas para personalizar com seu nome, logo ou contato.</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-4f2f8e9 elementor-widget elementor-widget-heading"
+							data-id="4f2f8e9" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">Valor: <s>R$ 7,90</s>
+									<br>
+
+									<b>Grátis hoje!</b>
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-60a1cc7 e-con-full e-flex e-con e-child"
+					data-id="60a1cc7" data-element_type="container" data-settings="{"
+					background_background":"classic"}"="">
+					<div class="elementor-element elementor-element-73d0bcb elementor-widget__width-initial elementor-widget elementor-widget-image"
+						data-id="73d0bcb" data-element_type="widget" data-widget_type="image.default">
+						<div class="elementor-widget-container">
+							<img loading="lazy" decoding="async" width="1080" height="1080"
+								src="images/Copia-de-SECRETO-26.webp" class="attachment-full size-full wp-image-7681"
+								alt=""
+								srcset="images/Copia-de-SECRETO-26.webp 1080w, images/Copia-de-SECRETO-26-300x300.webp 300w, images/Copia-de-SECRETO-26-1024x1024.webp 1024w, images/Copia-de-SECRETO-26-150x150.webp 150w, images/Copia-de-SECRETO-26-768x768.webp 768w"
+								sizes="(max-width: 1080px) 100vw, 1080px">
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-5bab369 e-con-full e-flex e-con e-child"
+						data-id="5bab369" data-element_type="container">
+						<div class="elementor-element elementor-element-3a1ede2 elementor-widget elementor-widget-heading"
+							data-id="3a1ede2" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">BÔNUS 8</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-7e08543 elementor-widget elementor-widget-heading"
+							data-id="7e08543" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">GRUPO VIP NO WHATSAPP</h3>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-d0e7ed2 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor"
+							data-id="d0e7ed2" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-widget-container">
+								<p data-start="2077" data-end="2271">Participe de uma comunidade exclusiva para receber
+									novidades, dicas e oportunidades em primeira mão.</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-4047cfd elementor-widget elementor-widget-heading"
+							data-id="4047cfd" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">Valor: <s>R$ 17,00</s>
+									<br>
+
+									<b>Grátis hoje!</b>
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-f2b35ac elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor"
+					data-id="f2b35ac" data-element_type="widget" data-widget_type="text-editor.default">
+					<div class="elementor-widget-container">
+						<p>Total em bônus: <span
+								style="color: #ffffff; background-color: #ff0000; padding-left: 8px; padding-right: 8px;"><b>R$191,40</b></span> —
+							você recebe de <b>graça</b>!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-9e3017a elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="9e3017a" data-element_type="section" data-settings="{" background_background":"classic"}"="">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dcbf3ad"
+					data-id="dcbf3ad" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-fe389b7 elementor-widget elementor-widget-spacer"
+							data-id="fe389b7" data-element_type="widget" data-widget_type="spacer.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-spacer">
+									<div class="elementor-spacer-inner"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-46c7e86 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="46c7e86" data-element_type="section" data-settings="{" background_background":"classic"}"="">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-35e8ea5"
+					data-id="35e8ea5" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cbbe937 elementor-widget elementor-widget-menu-anchor"
+							data-id="cbbe937" data-element_type="widget" data-widget_type="menu-anchor.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-menu-anchor" id="comprar"></div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-125533d elementor-widget elementor-widget-heading"
+							data-id="125533d" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">ESCOLHA O MELHOR<br>PLANO
+									PARA VOCÊ</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-377222f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="377222f" data-element_type="section" data-settings="{" background_background":"classic"}"="">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-d6c01b7 plano-clicavel"
+					id="plano-basico-card" data-id="d6c01b7" data-element_type="column" data-settings="{"
+					background_background":"classic"}"="">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-401f694 elementor-widget elementor-widget-heading"
+							data-id="401f694" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">PLANO BÁSICO</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-c22c5c2 elementor-widget elementor-widget-heading"
+							data-id="c22c5c2" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">De <b><span
+											style="color:red"><s>R$49,90</s></span> </b>por</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-b080756 elementor-widget elementor-widget-heading"
+							data-id="b080756" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">R$10</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-d4c1169 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+							data-id="d4c1169" data-element_type="widget" data-widget_type="icon-list.default">
+							<div class="elementor-widget-container">
+								<ul class="elementor-icon-list-items">
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Apostila Completa: <span
+												style="font-weight: normal;">100 Moldes Natalinos.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Acesso temporário <span
+												style="font-weight: normal;">(1 mês)</span></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-4410bad elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+							data-id="4410bad" data-element_type="widget" data-widget_type="icon-list.default">
+							<div class="elementor-widget-container">
+								<ul class="elementor-icon-list-items">
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-times-circle"></i> </span>
+										<span class="elementor-icon-list-text">BÔNUS EXTRAS (NÃO INCLUSOS)</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-f7032a9 elementor-align-center elementor-widget elementor-widget-button"
+							data-id="f7032a9" data-element_type="widget" data-widget_type="button.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-button-wrapper">
+									<a class="elementor-button elementor-button-link elementor-size-md"
+										href="upgradenatalino/index.html">
+										<span class="elementor-button-content-wrapper">
+											<span class="elementor-button-text">QUERO ESSA OPÇÃO!</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-c5680fd elementor-widget elementor-widget-heading"
+							data-id="c5680fd" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default">ATENÇÃO: <span
+										style="font-weight: 400">Temos uma oferta ainda mais VANTAJOSA para você! Veja
+										logo abaixo 👇🏻</span></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-fce0e99 plano-clicavel"
+					id="plano-premium-card" data-id="fce0e99" data-element_type="column" data-settings="{"
+					background_background":"classic"}"="">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5ce23cc elementor-widget elementor-widget-heading"
+							data-id="5ce23cc" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">PLANO PREMIUM: <span
+										style="font-weight: normal"> <br>SUPER OFERTA</span></h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-2864811 elementor-widget elementor-widget-heading"
+							data-id="2864811" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">(MELHOR NEGÓCIO)</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-aa9bbd8 elementor-widget elementor-widget-image"
+							data-id="aa9bbd8" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img loading="lazy" decoding="async" width="1024" height="867"
+									src="images/Copia-de-SECRETO-1-e1721964348384-1024x867.webp"
+									class="attachment-large size-large wp-image-7224" alt=""
+									srcset="images/Copia-de-SECRETO-1-e1721964348384-1024x867.webp 1024w, images/Copia-de-SECRETO-1-e1721964348384-300x254.webp 300w, images/Copia-de-SECRETO-1-e1721964348384-768x650.webp 768w, images/Copia-de-SECRETO-1-e1721964348384.webp 1080w"
+									sizes="(max-width: 1024px) 100vw, 1024px">
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-f799a81 elementor-widget elementor-widget-heading"
+							data-id="f799a81" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">Valor Total: R$197</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-e237438 elementor-widget elementor-widget-heading"
+							data-id="e237438" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">HOJE PAGAMENTO ÚNICO...</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-1943ba3 elementor-widget elementor-widget-heading"
+							data-id="1943ba3" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">R$27</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-5d6153e elementor-widget elementor-widget-heading"
+							data-id="5d6153e" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">ou <u><b>6X DE R$5,11 à
+											vista</b></u></h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-9632e50 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+							data-id="9632e50" data-element_type="widget" data-widget_type="divider.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-divider">
+									<span class="elementor-divider-separator">
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-05f7288 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+							data-id="05f7288" data-element_type="widget" data-widget_type="icon-list.default">
+							<div class="elementor-widget-container">
+								<ul class="elementor-icon-list-items">
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Apostila Completa: <span
+												style="font-weight: normal;">150 Moldes Natalinos.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Apostila Completa: <span
+												style="font-weight: normal;">1200 Moldes de Feltro.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Apostila Completa: <span
+												style="font-weight: normal;">Moldes Divertidamente.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Apostila: <span
+												style="font-weight: normal;">Moldes dinossauro.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Apostila: <span
+												style="font-weight: normal;">Moldes de Alfabeto.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Apostila: <span
+												style="font-weight: normal;">Moldes de Boneca.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Apostila: <span
+												style="font-weight: normal;">Moldes Baby Shark.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Apostila: <span
+												style="font-weight: normal;">Moldes Porquinho.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Apostila: <span
+												style="font-weight: normal;">Moldes Ursinhos.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Apostila: <span
+												style="color: rgb(0, 0, 0); font-weight: 400; white-space-collapse: collapse;">Moldes
+												Cabeças de Personagens</span><span
+												style="font-weight: normal;"><i>.</i></span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Guia Completo: <span
+												style="font-weight: normal;">Venda Mais no Instagram.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Bônus 01: <span
+												style="font-weight: 400;">Checklist "Plano R$2.000/mês com
+												Feltro".</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Bônus 02: <span
+												style="font-weight: 400;">Calcule Suas Peças De Forma
+												Automática.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Bônus 03: <span
+												style="font-weight: 400;">30 Moldes De Animais Safari.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Bônus 04: <span
+												style="font-weight: 400;">11 Ideias Para Lucrar Com
+												Artesanato.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Bônus 05: <span
+												style="font-weight: 400;">Guia de Materiais para Artesanato com
+												Feltro.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Bônus 06: <span
+												style="font-weight: 400;">Apostila Jogo da Memória.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Bônus 07: <span
+												style="font-weight: 400;">Etiquetas Editáveis Para Personalizar Suas
+												Peças.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Bônus 08: <span
+												style="font-weight: 400;">Grupo Vip no WhatsApp.</span></span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Acesso Vitalício.</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">Atualizações Gratuitas</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check-circle"></i> </span>
+										<span class="elementor-icon-list-text">7 dias de Garantia.</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-a987b61 elementor-align-center elementor-widget elementor-widget-button"
+							data-id="a987b61" data-element_type="widget" data-widget_type="button.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-button-wrapper">
+									<a class="elementor-button elementor-button-link elementor-size-md"
+										href="SEU LINK PAGAMENTO">
+										<span class="elementor-button-content-wrapper">
+											<span class="elementor-button-text">SIM! QUERO ESSA SUPER OFERTA!</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-5958218 elementor-widget elementor-widget-heading"
+							data-id="5958218" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h3 class="elementor-heading-title elementor-size-default"><b>APROVEITE AGORA:</b> Você
+									<u>NÃO vai encontrar</u> esse preço depois.
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="elementor-element elementor-element-8b89082 e-flex e-con-boxed e-con e-parent" data-id="8b89082"
+			data-element_type="container">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-d0c1273 e-con-full e-flex e-con e-child"
+					data-id="d0c1273" data-element_type="container">
+					<div class="elementor-element elementor-element-e6450d7 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image"
+						data-id="e6450d7" data-element_type="widget" data-widget_type="image.default">
+						<div class="elementor-widget-container">
+							<img loading="lazy" decoding="async" width="300" height="300"
+								src="images/media-10-32562fae5a40faef938.webp"
+								class="attachment-full size-full wp-image-7802" alt=""
+								srcset="images/media-10-32562fae5a40faef938.webp 300w, images/media-10-32562fae5a40faef938-150x150.webp 150w"
+								sizes="(max-width: 300px) 100vw, 300px">
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-4dc0b4f e-con-full e-flex e-con e-child"
+					data-id="4dc0b4f" data-element_type="container">
+					<div class="elementor-element elementor-element-76fda7b elementor-widget elementor-widget-heading"
+						data-id="76fda7b" data-element_type="widget" data-widget_type="heading.default">
+						<div class="elementor-widget-container">
+							<h3 class="elementor-heading-title elementor-size-default">Você não tem nada a perder!</h3>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-db5087c elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading"
+						data-id="db5087c" data-element_type="widget" data-widget_type="heading.default">
+						<div class="elementor-widget-container">
+							<h3 class="elementor-heading-title elementor-size-default">Garantia Incondicional de 7 dias!
+							</h3>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-a020021 elementor-widget__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor"
+						data-id="a020021" data-element_type="widget" data-widget_type="text-editor.default">
+						<div class="elementor-widget-container">
+							<p>Veja as apostilas e faça as peças&</p>
+							<p>&se por qualquer motivo você não ficar satisfeito ou não se adaptar, basta entrar em
+								contato dentro do prazo de 7 dias e solicitar reembolso completo do valor investido.</p>
+							<p>Eu estou tirando todo o risco das suas mãos e colcando nas minhas.</p>
+							<p>Faça sua inscrição agora mesmo e veja com seus próprios olhos.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-24bf359 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="24bf359" data-element_type="section" data-settings="{" background_background":"classic"}"="">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-73011de"
+					data-id="73011de" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<section
+							class="elementor-section elementor-inner-section elementor-element elementor-element-47ff842 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+							data-id="47ff842" data-element_type="section">
+							<div class="elementor-container elementor-column-gap-default">
+								<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-98456d5"
+									data-id="98456d5" data-element_type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-add8a2e elementor-widget elementor-widget-heading"
+											data-id="add8a2e" data-element_type="widget"
+											data-widget_type="heading.default">
+											<div class="elementor-widget-container">
+												<h3 class="elementor-heading-title elementor-size-default">Perguntas
+													Frequentes</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section
+							class="elementor-section elementor-inner-section elementor-element elementor-element-fdbb5d9 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+							data-id="fdbb5d9" data-element_type="section">
+							<div class="elementor-container elementor-column-gap-default">
+								<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-22e70ee"
+									data-id="22e70ee" data-element_type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-8f2ff8a elementor-widget elementor-widget-toggle"
+											data-id="8f2ff8a" data-element_type="widget"
+											data-widget_type="toggle.default">
+											<div class="elementor-widget-container">
+												<div class="elementor-toggle">
+													<div class="elementor-toggle-item">
+														<div id="elementor-tab-title-1501" class="elementor-tab-title"
+															data-tab="1" role="button"
+															aria-controls="elementor-tab-content-1501"
+															aria-expanded="false">
+															<span
+																class="elementor-toggle-icon elementor-toggle-icon-left"
+																aria-hidden="true">
+																<span class="elementor-toggle-icon-closed"><i
+																		class="fas fa-caret-right"></i></span>
+																<span class="elementor-toggle-icon-opened"><i
+																		class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+															</span>
+															<a class="elementor-toggle-title" tabindex="0">Quais são as
+																Formas de Pagamento?</a>
+														</div>
+
+														<div id="elementor-tab-content-1501"
+															class="elementor-tab-content elementor-clearfix"
+															data-tab="1" role="region"
+															aria-labelledby="elementor-tab-title-1501">
+															<p>Você pode pagar com qualquer cartão, boleto ou PIX.</p>
+														</div>
+													</div>
+													<div class="elementor-toggle-item">
+														<div id="elementor-tab-title-1502" class="elementor-tab-title"
+															data-tab="2" role="button"
+															aria-controls="elementor-tab-content-1502"
+															aria-expanded="false">
+															<span
+																class="elementor-toggle-icon elementor-toggle-icon-left"
+																aria-hidden="true">
+																<span class="elementor-toggle-icon-closed"><i
+																		class="fas fa-caret-right"></i></span>
+																<span class="elementor-toggle-icon-opened"><i
+																		class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+															</span>
+															<a class="elementor-toggle-title" tabindex="0">Como acesso o
+																contéudo?</a>
+														</div>
+
+														<div id="elementor-tab-content-1502"
+															class="elementor-tab-content elementor-clearfix"
+															data-tab="2" role="region"
+															aria-labelledby="elementor-tab-title-1502">
+															<p>O acesso a Área de Membros é enviado para seu e-mail
+																imediatamente após a confirmação do pagamento.</p>
+														</div>
+													</div>
+													<div class="elementor-toggle-item">
+														<div id="elementor-tab-title-1503" class="elementor-tab-title"
+															data-tab="3" role="button"
+															aria-controls="elementor-tab-content-1503"
+															aria-expanded="false">
+															<span
+																class="elementor-toggle-icon elementor-toggle-icon-left"
+																aria-hidden="true">
+																<span class="elementor-toggle-icon-closed"><i
+																		class="fas fa-caret-right"></i></span>
+																<span class="elementor-toggle-icon-opened"><i
+																		class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+															</span>
+															<a class="elementor-toggle-title" tabindex="0">Serve para
+																iniciantes?</a>
+														</div>
+
+														<div id="elementor-tab-content-1503"
+															class="elementor-tab-content elementor-clearfix"
+															data-tab="3" role="region"
+															aria-labelledby="elementor-tab-title-1503">
+															<p>Sim! Todavia, você precisa ter algum conhecimento mínimo
+																sobre feltro e costura.</p>
+														</div>
+													</div>
+													<div class="elementor-toggle-item">
+														<div id="elementor-tab-title-1504" class="elementor-tab-title"
+															data-tab="4" role="button"
+															aria-controls="elementor-tab-content-1504"
+															aria-expanded="false">
+															<span
+																class="elementor-toggle-icon elementor-toggle-icon-left"
+																aria-hidden="true">
+																<span class="elementor-toggle-icon-closed"><i
+																		class="fas fa-caret-right"></i></span>
+																<span class="elementor-toggle-icon-opened"><i
+																		class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+															</span>
+															<a class="elementor-toggle-title" tabindex="0">Posso tirar
+																dúvidas?</a>
+														</div>
+
+														<div id="elementor-tab-content-1504"
+															class="elementor-tab-content elementor-clearfix"
+															data-tab="4" role="region"
+															aria-labelledby="elementor-tab-title-1504">
+															<p>Sim! Basta chamar nossa equipe de suporte pelo botão de
+																WhatsApp dessa páginas, pelo nosso Instagram, pelo
+																Facebook ou por email.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-de4c22e elementor-align-center elementor-widget elementor-widget-button"
+											data-id="de4c22e" data-element_type="widget"
+											data-widget_type="button.default">
+											<div class="elementor-widget-container">
+												<div class="elementor-button-wrapper">
+													<a class="elementor-button elementor-button-link elementor-size-lg"
+														href="#comprar">
+														<span class="elementor-button-content-wrapper">
+															<span class="elementor-button-text">SIM! QUERO ACESSAR
+																AGORA</span>
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-247180e elementor-widget elementor-widget-html"
+											data-id="247180e" data-element_type="widget"
+											data-widget_type="html.default">
+											<div class="elementor-widget-container">
+												<script src="js/latest.js" async="" defer=""></script>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-63da955 elementor-widget elementor-widget-html"
+											data-id="63da955" data-element_type="widget"
+											data-widget_type="html.default">
+											<div class="elementor-widget-container">
+
+
+
+												<meta charset="UTF-8">
+												<meta name="viewport" content="width=device-width, initial-scale=1.0">
+												<title>Notificações de Compra</title>
+												<style>
+													.notificacao {
+														position: fixed;
+														bottom: 20px;
+														left: 20px;
+														background-color: #fff;
+														border-radius: 8px;
+														box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+														padding: 16px;
+														min-width: 260px;
+														font-family: sans-serif;
+														border-left: 4px solid #00b894;
+														display: none;
+														z-index: 1000;
+														animation: slideIn 0.5s ease-out;
+													}
+
+													.notificacao .nome {
+														color: #00b894;
+														font-weight: bold;
+													}
+
+													.notificacao .fechar {
+														position: absolute;
+														top: 6px;
+														right: 10px;
+														cursor: pointer;
+														font-weight: bold;
+														color: #aaa;
+													}
+
+													@keyframes slideIn {
+														from {
+															transform: translateY(50px);
+															opacity: 0;
+														}
+
+														to {
+															transform: translateY(0);
+															opacity: 1;
+														}
+													}
+												</style>
+
+
+
+												<div class="notificacao" id="notificacao">
+													<span class="fechar" onclick="fecharNotificacao()">×</span>
+													<div class="nome" id="nomeCliente">João Santos</div>
+													<div>Comprou: <strong id="produto">Plano Básico</strong></div>
+													<div id="cidade">Rio de Janeiro - RJ • 25 min atrás</div>
+												</div>
+
+												<script>
+													const notificacoes = [
+														{ nome: "Ana Paula", produto: "Plano Básico", cidade: "São Paulo - SP", tempo: "10 min" },
+														{ nome: "Maria Clara", produto: "Plano Completo", cidade: "Belo Horizonte - MG", tempo: "18 min" },
+														{ nome: "Juliana Rocha", produto: "Plano Básico", cidade: "Salvador - BA", tempo: "7 min" },
+														{ nome: "Fernanda Lima", produto: "Plano Completo", cidade: "Curitiba - PR", tempo: "13 min" },
+														{ nome: "Camila Andrade", produto: "Plano Básico", cidade: "Porto Alegre - RS", tempo: "22 min" },
+														{ nome: "Patrícia Nunes", produto: "Plano Completo", cidade: "Fortaleza - CE", tempo: "16 min" },
+														{ nome: "Larissa Souza", produto: "Plano Básico", cidade: "Recife - PE", tempo: "5 min" },
+														{ nome: "Bruna Mendes", produto: "Plano Completo", cidade: "Manaus - AM", tempo: "19 min" }
+													];
+
+													let indice = 0;
+
+													function mostrarNotificacao(nome, produto, local, tempo) {
+														document.getElementById('nomeCliente').textContent = nome;
+														document.getElementById('produto').textContent = produto;
+														document.getElementById('cidade').textContent = `${local} • ${tempo} atrás`;
+
+														const notificacao = document.getElementById('notificacao');
+														notificacao.style.display = 'block';
+
+														setTimeout(() => {
+															notificacao.style.display = 'none';
+														}, 10000); // esconde após 10 segundos
+													}
+
+													function iniciarCiclo() {
+														const dados = notificacoes[indice];
+														mostrarNotificacao(dados.nome, dados.produto, dados.cidade, dados.tempo);
+														indice = (indice + 1) % notificacoes.length;
+													}
+
+													setTimeout(() => {
+														iniciarCiclo();
+														setInterval(iniciarCiclo, 15000); // a cada 15 segundos
+													}, 1000);
+
+													function fecharNotificacao() {
+														document.getElementById('notificacao').style.display = 'none';
+													}
+												</script>
+
+
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-2ec44c06 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="2ec44c06" data-element_type="section" data-settings="{" background_background":"classic"}"="">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dfa219b"
+					data-id="dfa219b" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-621f6eb0 elementor-widget elementor-widget-image"
+							data-id="621f6eb0" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img loading="lazy" decoding="async" width="300" height="55"
+									src="images/Feltro_online-1.png.webp"
+									class="attachment-large size-large wp-image-7238" alt="">
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-49065662 elementor-widget elementor-widget-text-editor"
+							data-id="49065662" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-widget-container">
+								<p><b>Suporte:</b> suporte@feltroonline.com</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-730f87d6 elementor-widget elementor-widget-text-editor"
+							data-id="730f87d6" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-widget-container">
+								<p><span style="color: #ffffff;"><a style="color: #ffffff;"
+											href="https://treinamentosonlines.com.br/politica-privacidade/">Política de
+											Privacidade</a> | <a style="color: #ffffff;"
+											href="https://treinamentosonlines.com.br/termos-de-uso/">Termos de
+											Uso</a></span></p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-2d7c8cb0 elementor-widget elementor-widget-text-editor"
+							data-id="2d7c8cb0" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-widget-container">
+								<p><b>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook.</b>
+									Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso
+									site. Acreditamos em um trabalho certo e honesto. Mostro aqui os tipos de resultados
+									que são possíveis de serem alcançados ao se ter as informações certas e verdadeiras.
+									Mas que fique claro: O quão rápido e o quão longe você poderá chegar somente você
+									poderá dizer.�</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/popularfx\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+	<!-- HFCM by 99 Robots - Snippet # 2: UTM EDUZZ -->
+	<script>
+		(function () {
+			const utmParamQueryString = new URLSearchParams(window.location.search);
+			if (utmParamQueryString.toString()) {
+				var navLinks = document.querySelectorAll('a');
+				navLinks.forEach(function (item) {
+					if (item.href.indexOf('https://sun.eduzz.com') !== -1) {
+						if (item.href.indexOf('?') === -1) {
+							item.href += '?' + utmParamQueryString.toString();
+						} else {
+							item.href += '&' + utmParamQueryString.toString();
+						}
+					}
+				});
+			}
+		})();
+	</script>
+	<!-- /end HFCM by 99 Robots -->
+	<input type="hidden" value="https://feltroonline.com/updateAutomaticMetrics" id="splUrlAutomaticLinks"><input
+		type="hidden" value="8484" id="splPostIdAutomaticLinks">
+	<div id="wpcp-error-message" class="msgmsg-box-wpcp hideme"><span>error: </span>Content is protected !!</div>
+	<script>
+		var timeout_result;
+		function show_wpcp_message(smessage) {
+			if (smessage !== "") {
+				var smessage_text = '<span>Alert: </span>' + smessage;
+				document.getElementById("wpcp-error-message").innerHTML = smessage_text;
+				document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp showme";
+				clearTimeout(timeout_result);
+				timeout_result = setTimeout(hide_message, 3000);
+			}
+		}
+		function hide_message() {
+			document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp hideme";
+		}
+	</script>
+	<style>
+		@media print {
+			body * {
+				display: none !important;
+			}
+
+			body:after {
+				content: "You are not allowed to print preview this page, Thank you";
+			}
+		}
+	</style>
+	<style type="text/css">
+		#wpcp-error-message {
+			direction: ltr;
+			text-align: center;
+			transition: opacity 900ms ease 0s;
+			z-index: 99999999;
+		}
+
+		.hideme {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.showme {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.msgmsg-box-wpcp {
+			border: 1px solid #f5aca6;
+			border-radius: 10px;
+			color: #555;
+			font-family: Tahoma;
+			font-size: 11px;
+			margin: 10px;
+			padding: 10px 36px;
+			position: fixed;
+			width: 255px;
+			top: 50%;
+			left: 50%;
+			margin-top: -10px;
+			margin-left: -130px;
+			-webkit-box-shadow: 0px 0px 34px 2px rgba(242, 191, 191, 1);
+			-moz-box-shadow: 0px 0px 34px 2px rgba(242, 191, 191, 1);
+			box-shadow: 0px 0px 34px 2px rgba(242, 191, 191, 1);
+		}
+
+		.msgmsg-box-wpcp span {
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		.warning-wpcp {
+			background: #ffecec url('images/warning.png') no-repeat 10px 50%;
+		}
+	</style>
+
+	<script>
+		const lazyloadRunObserver = () => {
+			const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
+			const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						let lazyloadBackground = entry.target;
+						if (lazyloadBackground) {
+							lazyloadBackground.classList.add('e-lazyloaded');
+						}
+						lazyloadBackgroundObserver.unobserve(entry.target);
+					}
+				});
+			}, { rootMargin: '200px 0px 200px 0px' });
+			lazyloadBackgrounds.forEach((lazyloadBackground) => {
+				lazyloadBackgroundObserver.observe(lazyloadBackground);
+			});
+		};
+		const events = [
+			'DOMContentLoaded',
+			'elementor/lazyload/observe',
+		];
+		events.forEach((event) => {
+			document.addEventListener(event, lazyloadRunObserver);
+		});
+	</script>
+
+	<script src="js/hooks.min.js" id="wp-hooks-js"></script>
+	<script src="js/i18n.min.js" id="wp-i18n-js"></script>
+	<script id="wp-i18n-js-after">
+		wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
+	</script>
+	<script id="presto-components-js-extra">
+		var prestoComponents = { "url": "https:\/\/feltroonline.com\/wp-content\/plugins\/presto-player\/dist\/components\/web-components\/web-components.esm.js?ver=1752091333" };
+		var prestoPlayer = { "plugin_url": "https:\/\/feltroonline.com\/wp-content\/plugins\/presto-player\/", "logged_in": "", "root": "https:\/\/feltroonline.com\/wp-json\/", "nonce": "71fe9a5fb0", "ajaxurl": "https:\/\/feltroonline.com\/wp-admin\/admin-ajax.php", "isAdmin": "", "isSetup": { "bunny": { "storage": false, "stream": false } }, "proVersion": "2.0.8", "isPremium": "1", "wpVersionString": "wp\/v2\/", "prestoVersionString": "presto-player\/v1\/", "debug": "", "debug_navigator": "", "i18n": { "skip": "Skip", "rewatch": "Rewatch", "emailPlaceholder": "Email address", "emailDefaultHeadline": "Enter your email to play this episode.", "chapters": "Chapters", "show_chapters": "Show Chapters", "hide_chapters": "Hide Chapters", "restart": "Restart", "rewind": "Rewind {seektime}s", "play": "Play", "pause": "Pause", "fastForward": "Forward {seektime}s", "seek": "Seek", "seekLabel": "{currentTime} of {duration}", "played": "Played", "buffered": "Buffered", "currentTime": "Current time", "duration": "Duration", "volume": "Volume", "mute": "Mute", "unmute": "Unmute", "enableCaptions": "Enable captions", "disableCaptions": "Disable captions", "download": "Download", "enterFullscreen": "Enter fullscreen", "exitFullscreen": "Exit fullscreen", "frameTitle": "Player for {title}", "captions": "Captions", "settings": "Settings", "pip": "PIP", "menuBack": "Go back to previous menu", "speed": "Speed", "normal": "Normal", "quality": "Quality", "loop": "Loop", "start": "Start", "end": "End", "all": "All", "reset": "Reset", "disabled": "Disabled", "enabled": "Enabled", "advertisement": "Ad", "qualityBadge": { "2160": "4K", "1440": "HD", "1080": "HD", "720": "HD", "576": "SD", "480": "SD" }, "auto": "AUTO", "upNext": "Up Next", "startOver": "Start Over" }, "hls_start_level": "480" };
+		var prestoComponents = { "url": "https:\/\/feltroonline.com\/wp-content\/plugins\/presto-player\/dist\/components\/web-components\/web-components.esm.js?ver=1752091333" };
+		var prestoPlayer = { "plugin_url": "https:\/\/feltroonline.com\/wp-content\/plugins\/presto-player\/", "logged_in": "", "root": "https:\/\/feltroonline.com\/wp-json\/", "nonce": "71fe9a5fb0", "ajaxurl": "https:\/\/feltroonline.com\/wp-admin\/admin-ajax.php", "isAdmin": "", "isSetup": { "bunny": { "storage": false, "stream": false } }, "proVersion": "2.0.8", "isPremium": "1", "wpVersionString": "wp\/v2\/", "prestoVersionString": "presto-player\/v1\/", "debug": "", "debug_navigator": "", "i18n": { "skip": "Skip", "rewatch": "Rewatch", "emailPlaceholder": "Email address", "emailDefaultHeadline": "Enter your email to play this episode.", "chapters": "Chapters", "show_chapters": "Show Chapters", "hide_chapters": "Hide Chapters", "restart": "Restart", "rewind": "Rewind {seektime}s", "play": "Play", "pause": "Pause", "fastForward": "Forward {seektime}s", "seek": "Seek", "seekLabel": "{currentTime} of {duration}", "played": "Played", "buffered": "Buffered", "currentTime": "Current time", "duration": "Duration", "volume": "Volume", "mute": "Mute", "unmute": "Unmute", "enableCaptions": "Enable captions", "disableCaptions": "Disable captions", "download": "Download", "enterFullscreen": "Enter fullscreen", "exitFullscreen": "Exit fullscreen", "frameTitle": "Player for {title}", "captions": "Captions", "settings": "Settings", "pip": "PIP", "menuBack": "Go back to previous menu", "speed": "Speed", "normal": "Normal", "quality": "Quality", "loop": "Loop", "start": "Start", "end": "End", "all": "All", "reset": "Reset", "disabled": "Disabled", "enabled": "Enabled", "advertisement": "Ad", "qualityBadge": { "2160": "4K", "1440": "HD", "1080": "HD", "720": "HD", "576": "SD", "480": "SD" }, "auto": "AUTO", "upNext": "Up Next", "startOver": "Start Over" }, "hls_start_level": "480" };
+	</script>
+	<script src="js/player-static.js" type="module" defer=""></script>
+	<script src="js/automatic-links.js" id="spl_automaticLink_js-js"></script>
+	<script id="wp_notification_alertConvert_js-js-extra">
+		var wpAlertConvert = { "siteurl": "https:\/\/feltroonline.com", "pageOrPost": "page", "currentePageID": "8484", "imagesAlertConvert": "https:\/\/feltroonline.com\/wp-content\/plugins\/wp-nodz-conversion-alerts\/assets\/images" };
+	</script>
+	<script src="js/wpNotificationAlertConvert.js" id="wp_notification_alertConvert_js-js"></script>
+	<script src="js/navigation.js" id="popularfx-navigation-js"></script>
+	<script id="wp-statistics-tracker-js-extra">
+		var WP_Statistics_Tracker_Object = { "requestUrl": "https:\/\/feltroonline.com\/wp-json\/wp-statistics\/v2", "ajaxUrl": "https:\/\/feltroonline.com\/wp-admin\/admin-ajax.php", "hitParams": { "wp_statistics_hit": 1, "source_type": "page", "source_id": 8484, "search_query": "", "signature": "8eab9f7efec563ddf5b1d7858a2ed747", "endpoint": "hit" }, "onlineParams": { "wp_statistics_hit": 1, "source_type": "page", "source_id": 8484, "search_query": "", "signature": "8eab9f7efec563ddf5b1d7858a2ed747", "endpoint": "online" }, "option": { "userOnline": true, "dntEnabled": false, "bypassAdBlockers": false, "consentIntegration": { "name": null, "status": [] }, "isPreview": false, "trackAnonymously": false, "isWpConsentApiActive": false, "consentLevel": "disabled" }, "jsCheckTime": "60000", "isLegacyEventLoaded": "", "customEventAjaxUrl": "https:\/\/feltroonline.com\/wp-admin\/admin-ajax.php?action=wp_statistics_custom_event&nonce=dc07832255" };
+	</script>
+	<script src="js/tracker.js" id="wp-statistics-tracker-js"></script>
+	<script src="js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+	<script src="js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+	<script src="js/core.min.js" id="jquery-ui-core-js"></script>
+	<script id="elementor-frontend-js-before">
+		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Partilhar no Facebook", "shareOnTwitter": "Partilhar no Twitter", "pinIt": "Fix\u00e1-lo", "download": "Download", "downloadImage": "Descarregar Imagem", "fullscreen": "\u00c9cr\u00e3 Inteiro", "zoom": "Zoom", "share": "Partilhar", "playVideo": "Reproduzir v\u00eddeo", "previous": "Anterior", "next": "Seguinte", "close": "Fechar", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile ao alto", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile ao baixo", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Port\u00e1til", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": true }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": true } }, "hasCustomBreakpoints": true }, "version": "3.30.3", "is_static": false, "experimentalFeatures": { "additional_custom_breakpoints": true, "container": true, "theme_builder_v2": true, "nested-elements": true, "home_screen": true, "global_classes_should_enforce_capabilities": true, "cloud-library": true, "e_opt_in_v4_page": true, "page-transitions": true, "notes": true, "form-submissions": true, "e_scroll_snap": true }, "urls": { "assets": "https:\/\/feltroonline.com\/wp-content\/plugins\/elementor\/assets\/", "ajaxurl": "https:\/\/feltroonline.com\/wp-admin\/admin-ajax.php", "uploadUrl": "http:\/\/feltroonline.com\/wp-content\/uploads" }, "nonces": { "floatingButtonsClickTracking": "0c471199cb" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet", "viewport_laptop", "viewport_widescreen"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 8484, "title": "Natalino%20v2%20%E2%80%93%20Feltro%20Online", "excerpt": "", "featuredImage": false } };
+	</script>
+	<script src="js/frontend.min.js" id="elementor-frontend-js"></script>
+	<script src="js/webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
+	<script id="elementor-pro-frontend-js-before">
+		var ElementorProFrontendConfig = { "ajaxurl": "https:\/\/feltroonline.com\/wp-admin\/admin-ajax.php", "nonce": "6bc73c920b", "urls": { "assets": "https:\/\/feltroonline.com\/wp-content\/plugins\/elementor-pro\/assets\/", "rest": "https:\/\/feltroonline.com\/wp-json\/" }, "shareButtonsNetworks": { "facebook": { "title": "Facebook", "has_counter": true }, "twitter": { "title": "Twitter" }, "linkedin": { "title": "LinkedIn", "has_counter": true }, "pinterest": { "title": "Pinterest", "has_counter": true }, "reddit": { "title": "Reddit", "has_counter": true }, "vk": { "title": "VK", "has_counter": true }, "odnoklassniki": { "title": "OK", "has_counter": true }, "tumblr": { "title": "Tumblr" }, "digg": { "title": "Digg" }, "skype": { "title": "Skype" }, "stumbleupon": { "title": "StumbleUpon", "has_counter": true }, "mix": { "title": "Mix" }, "telegram": { "title": "Telegram" }, "pocket": { "title": "Pocket", "has_counter": true }, "xing": { "title": "XING", "has_counter": true }, "whatsapp": { "title": "WhatsApp" }, "email": { "title": "Email" }, "print": { "title": "Print" } }, "facebook_sdk": { "lang": "pt_PT", "app_id": "" }, "lottie": { "defaultAnimationUrl": "https:\/\/feltroonline.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json" } };
+	</script>
+	<script src="js/frontend.min_1.js" id="elementor-pro-frontend-js"></script>
+	<script src="js/preloaded-elements-handlers.min.js" id="pro-preloaded-elements-handlers-js"></script>
+
+
+	<!-- Script para tornar toda a área dos planos clicável -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Plano Básico - área clicável
+			var planoBasico = document.getElementById('plano-basico-card');
+			if (planoBasico) {
+				planoBasico.addEventListener('click', function (e) {
+					// Não redireciona se clicar em um link existente
+					if (e.target.tagName !== 'A' && !e.target.closest('a')) {
+						window.location.href = 'upgradenatalino/index.html';
+					}
+				});
+			}
+
+			// Plano Premium - área clicável
+			var planoPremium = document.getElementById('plano-premium-card');
+			if (planoPremium) {
+				planoPremium.addEventListener('click', function (e) {
+					// Não redireciona se clicar em um link existente
+					if (e.target.tagName !== 'A' && !e.target.closest('a')) {
+						window.location.href = 'SEU LINK PAGAMENTO';
+					}
+				});
+			}
+		});
+	</script>
+
+</body>
+
+</html><!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+
+Served from: feltroonline.com @ 2025-10-13 15:55:01 by W3 Total Cache
+-->
