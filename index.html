@@ -2535,11 +2535,20 @@
 		});
 	</script>
 
+		<!-- Back Redirect Script - Redireciona para upgradenatalino quando o cliente tenta voltar -->
+	<script>
+		(function () {
+			// Adiciona entrada no histórico para capturar o botão voltar
+			history.pushState(null, null, location.href);
+
+			// Listener para quando o usuário tenta voltar
+			window.addEventListener('popstate', function (event) {
+				// Redireciona para a página de upgrade quando tenta voltar
+				window.location.href = 'upgradenatalino/index.html';
+			});
+		})();
+	</script>
+
 </body>
 
-</html><!--
-Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
-
-
-Served from: feltroonline.com @ 2025-10-13 15:55:01 by W3 Total Cache
--->
+</html>
